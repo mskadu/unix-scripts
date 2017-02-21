@@ -1,0 +1,11 @@
+# List of hosts for template-multihostexec.sh
+
+# Group1
+some_user@10.10.10.1
+some_user@10.10.10.2
+some_other_user@10.10.10.3
+
+# Group2
+some_user@10.10.11.1
+some_user@10.10.11.2
+some_other_user@10.10.11.3
