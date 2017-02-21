@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Template shell script that provides logging functions
 # As usual error messages are logged to STDERRR so they can be rediverted as convenient.
