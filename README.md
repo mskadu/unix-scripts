@@ -1,5 +1,5 @@
-# unixbash-scripts
-A collection of UNIX bash scripts I often use. 
+# unix-scripts
+A collection of UNIX scripts I often use. 
 
 **WARNING**
 All scripts available here have been copy-pasted from my existing works. 
