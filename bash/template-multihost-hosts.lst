@@ -1,4 +1,8 @@
 # List of hosts for template-multihostexec.sh
+# Commented and empty lines will be ignored.
+#
+# Note: If exec.sh uses SSH, then the host names below
+#       *needs* to be in form ssh_username@host_name
 
 # Group1
 some_user@10.10.10.1
