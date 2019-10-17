@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
+# ssh-add-all-keys: A simple script to quickly find all (RSA) keys under your home folder 
+# and add them to the SSH authentication agent
+#
+# Author: Mayuresh K (created: Feb 2017)
+#
+# usage: ./ssh-add-all-keys.sh
+#
+# See also: 
+#    https://linux.die.net/man/1/ssh-add
 
 # Control if messages are to be shown
 DEBUG_FLAG=1 # 0==Off and 1=On
@@ -16,6 +25,7 @@ ssh_Add_All_Keys() {
   Log "Refreshing your SSH keys (RSA-only. All under ~/.ssh/ )"
   Log "Expect to be asked for relevant passwords"
   ssh-add -D && find ~ -name id_rsa -exec ssh-add {} \;
+  # tip: find id_dsa  for DSA keys. Or id_?sa for both
 
   Log "Done. And here's what it looks like after"
   ssh-add -l
